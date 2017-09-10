@@ -9,9 +9,10 @@ func main() {
 	fmt.Print("** GoPrime **\nPlease type an integer: ")
 	var number int
 	fmt.Scanln(&number)
-	fmt.Printf("Performing prime factorization on number %v...\n", number)
+	fmt.Printf("Performing prime factorization on number %v...\n\n", number)
 	factors := performPrimeFactorization(number)
 	factorsString := prettyFactors(number, factors)
+	fmt.Println()
 	fmt.Println(factorsString)
 }
 
@@ -37,7 +38,7 @@ func performPrimeFactorization(number int) []int {
 			continue
 		}
 		for isNumberDivisible(currentNumber, i) {
-			fmt.Println(" |", i)
+			fmt.Println("\t|", i)
 			factors = append(factors, i)
 			currentNumber /= i
 			fmt.Print(currentNumber)
