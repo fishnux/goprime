@@ -15,6 +15,7 @@ func main() {
 	fmt.Println(factorsString)
 }
 
+// prettyFactors returns a string with the format "number = factor1 * factor2 ..."
 func prettyFactors(number int, factors []int) string {
 	factorsString := strconv.Itoa(number) + " = "
 	for i, v := range factors {
@@ -26,8 +27,8 @@ func prettyFactors(number int, factors []int) string {
 	return factorsString
 }
 
+// performPrimeFactorization factors an integer using trial division
 func performPrimeFactorization(number int) []int {
-	// Trial division
 	currentNumber := number
 	factors := []int{}
 	fmt.Print(currentNumber)
