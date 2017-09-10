@@ -2,6 +2,8 @@
 
 GoPrime is a simple, single-threaded program written in Go, that accepts an integer as the user input and performs prime factorization on it.
 
+![Screenshot](https://i.imgur.com/H3bC4VW.png)
+
 # Why?
 
 I recently finished learning Go fundamentals. Prime numbers are cool, so I decided to build this tool. It might be able to help some people learning math! :)
